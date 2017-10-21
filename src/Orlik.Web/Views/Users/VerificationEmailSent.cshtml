@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Wiadomość wysłana";
+}
+
+<div class="passwordchanged-title">
+    <h1>Wiadomość z linkiem aktywacyjnym została wysłana na podany adres email!</h1>
+</div>
+
+<div class="btn btn-passwordchanged btn-block center-block">
+    @Html.ActionLink("Zaloguj się", "SignIn", "Account", null, new { @class = "link-start" })
+</div>

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Start";
+}
+
+<div class="jumbotron jumbotron-start text-center">
+    <h1>Aplikacja Orlik</h1>
+    <p>Czas zagrać w piłkę!</p>
+</div>
+<div class="panel-start">
+    <div class="btn btn-start btn-block center-block">
+        @Html.ActionLink("Logowanie", "SignIn", "Account", null, new {@class= "link-start" })
+    </div>
+    <div class="btn btn-start btn-block center-block">
+        @Html.ActionLink("Utwórz konto", "Register", "Users", null, new { @class = "link-start" })
+    </div>
+</div>

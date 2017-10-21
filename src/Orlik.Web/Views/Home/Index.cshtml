@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Strona domowa";
+}
+
+<div class="home-title">
+    <h1>Szukaj ludzi do grania lub dołącz do istniejących rezerwacji!</h1>
+</div>
+
+<div class="panel-home">
+    <div class="btn btn-home btn-block center-block">
+        @Html.ActionLink("Dodaj rezerwację", "Create", "Reservations", null, new { @class = "link-home" })
+    </div>
+    <div class="btn btn-home btn-block center-block">
+        @Html.ActionLink("Pokaż wszystkie rezerwacje", "Index", "Reservations", null, new { @class = "link-home" })
+    </div>
+    <div class="btn btn-home btn-block center-block">
+        @Html.ActionLink("Pokaż moje rezerwacje", "User", "Reservations", null, new { @class = "link-home" })
+    </div>
+    <div class="btn btn-home btn-block center-block">
+        @Html.ActionLink("Zmień hasło", "ChangePassword", "Account", null, new { @class = "link-home" })
+    </div>
+    <div class="btn btn-home btn-block center-block">
+        @Html.ActionLink("Wyloguj się", "SignOut", "Account", null, new { @class = "link-home" })
+    </div>
+</div>

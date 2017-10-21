@@ -1,0 +1,443 @@
+﻿body {
+    font-family: 'Raleway', sans-serif !important;
+    background-color: #006400 !important;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.my-footer {
+    background-color: #9acd32;
+    color: white;
+    pointer-events: none;
+}
+
+.jumbotron-start {
+    color: white !important;
+    background-color: #9acd32 !important;
+    pointer-events: none;
+}
+
+.btn-start {
+    border: solid 2px white !important;
+    border-radius: 10px !important;
+    width: 400px !important;
+    background-color: #9acd32;
+    color: white;
+    font-size: 25px !important;
+    margin-bottom: 20px !important;
+}
+
+.btn-start:hover {
+    background-color: darkolivegreen;
+}
+
+.panel-start {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.link-start {
+    display: block;
+    text-decoration: none !important;
+    color: white;
+}
+
+.link-start:hover {
+    color: white;
+}
+
+.signin-wrapper {
+    background-color: #9acd32 !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+}
+
+.signin-title {
+    color: white !important;
+    text-align: center;
+    padding-bottom: 3%;
+    pointer-events: none;
+}
+
+.sigin-text {
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    pointer-events: none;
+}
+
+.btn-signin {
+    border: solid 2px white !important;
+    border-radius: 10px !important;
+    width: 200px !important;
+    background-color: #9acd32;
+    color: white;
+}
+
+.btn-signin:hover {
+    background-color: darkolivegreen;
+}
+
+.register-wrapper {
+    background-color: #9acd32 !important;
+    padding-bottom: 1%;
+    border-radius: 10px;
+}
+
+.register-title {
+    color: white !important;
+    text-align: center;
+    padding-bottom: 1%;
+    pointer-events: none;
+}
+
+.register-label {
+    text-align: center;
+}
+
+.register-text {
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    pointer-events: none;
+}
+
+.resetpassword-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    pointer-events: none;
+}
+
+.resetpassword-wrapper {
+    background-color: #9acd32 !important;
+    padding-bottom: 5%;
+    border-radius: 10px;
+}
+
+.resetpassword-label {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.home-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    pointer-events: none;
+}
+
+.btn-home {
+    border: solid 2px white !important;
+    border-radius: 10px !important;
+    width: 300px !important;
+    background-color: #9acd32;
+    color: white;
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.btn-home:hover {
+    background-color: darkolivegreen;
+}
+
+.link-home {
+    display: block;
+    text-decoration: none !important;
+    color: white;
+}
+
+.link-home:hover {
+    color: white;
+}
+
+.panel-home {
+    padding-top: 5%;
+}
+
+.changepassword-wrapper {
+    background-color: #9acd32 !important;
+    padding-bottom: 3%;
+    border-radius: 10px;
+}
+
+.changepassword-label {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.changepassword-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    pointer-events: none;
+}
+
+.signout-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    pointer-events: none;
+}
+
+.btn-signout {
+    border: solid 2px white !important;
+    border-radius: 10px !important;
+    width: 300px !important;
+    background-color: #9acd32;
+    color: white;
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.btn-signout:hover {
+    background-color: darkolivegreen;
+}
+
+.link-signout {
+    display: block;
+    text-decoration: none !important;
+    color: white;
+}
+
+.link-signout:hover {
+    color: white;
+}
+
+.resetpasswordconfirmed-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    pointer-events: none;
+}
+
+.signin-wrapper {
+    background-color: #9acd32 !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+}
+
+.deletereservation-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    pointer-events: none;
+}
+
+.link-deletereservation {
+    display: block;
+    text-decoration: none !important;
+    color: white; 
+}
+
+.link-deletereservation:hover {
+    color: white;
+}
+
+.btn-deletereservation {
+    border: solid 2px white !important;
+    border-radius: 10px !important;
+    width: 300px !important;
+    background-color: #9acd32;
+    color: white;
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+    margin-top: 100px;
+}
+
+.btn-deletereservation:hover {
+    background-color: darkolivegreen;
+}
+.deletereservation-wrapper {
+    background-color: #9acd32 !important;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    text-align: center !important;
+}
+
+.reservationsindex-title {
+    color: white !important;
+    text-align: center;
+    padding-bottom: 1%;
+    pointer-events: none;
+}
+
+.reservationsindex-wrapper {
+    background-color: #9acd32 !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+}
+
+.reservationsindex-link {
+    font-size: 15px;
+    display: block;
+    text-decoration: none !important;
+    color: black;
+    padding: 10px;
+    margin: -10px;
+}
+
+.reservationsindex-link:hover {
+    color: black;
+}
+
+.btn-reservationsindex {
+    border: solid white 2px !important;
+    border-radius: 10px !important;
+    width: 300px !important;
+    background-color: #9acd32;
+    color: white;
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px;
+}
+
+.btn-reservationsindex:hover {
+    background-color: darkolivegreen;
+}
+
+.reservationsuser-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    pointer-events: none;
+}
+
+.reservationsuser-link {
+    font-size: 15px;
+    display: block;
+    text-decoration: none !important;
+    color: black;
+    padding: 10px;
+    margin: -10px;
+}
+
+.reservationsuser-link:hover {
+    color: white;
+}
+
+.btn-reservationsuser {
+    background-color: #9acd32;
+    color: white;
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px;
+}
+
+.btn-reservationsuser:hover {
+    background-color: darkolivegreen;
+}
+
+.reservationsdetails-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    pointer-events: none;
+}
+
+.btn-reservationsdetails {
+    border: solid white 2px !important;
+    border-radius: 10px !important;
+    width: 300px !important;
+    background-color: #9acd32;
+    color: white;
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+    margin-top: 50px;
+}
+
+.btn-reservationsdetails:hover {
+    background-color: darkolivegreen;
+}
+
+.reservationscreate-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    pointer-events: none;
+}
+
+.reservationscreate-wrapper {
+    background-color: #9acd32 !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+}
+
+.btn-reservationscreate {
+    border: solid white 2px !important;
+    border-radius: 10px !important;
+    width: 200px !important;
+    background-color: #9acd32;
+    color: white;
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+    margin-top: 50px;
+}
+
+.btn-reservationscreate:hover {
+    background-color: darkolivegreen;
+}
+
+.passwordchanged-title {
+    color: white !important;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    pointer-events: none;
+}
+
+.btn-passwordchanged {
+    border: solid white 2px !important;
+    border-radius: 10px !important;
+    width: 300px !important;
+    background-color: #9acd32;
+    color: white;
+    font-size: 25px !important;
+    margin-bottom: 20px !important;
+    margin-top: 50px;
+}
+
+.btn-passwordchanged:hover {
+    background-color: darkolivegreen;
+}

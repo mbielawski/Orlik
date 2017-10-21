@@ -1,0 +1,44 @@
+﻿@model Orlik.Web.ViewModels.Reservations.ReservationsCreateViewModel
+
+@{
+    ViewBag.Title = "Stwórz rezerwację";
+}
+
+<div class="reservationscreate-title">
+    <h1>Nowa rezerwacja</h1>
+</div>
+
+<div class="reservationscreate-wrapper">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group text-center">
+                @Html.Label("Data")
+                <div>
+                    @Html.TextBoxFor(model => model.Date, new { type = "datetime-local"})
+                    @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group text-center">
+                @Html.Label("Poziom")
+                <div>
+                    @Html.EnumDropDownListFor(x => x.Difficulty, null, new { @class = "form-control center-block" })
+                    @Html.ValidationMessageFor(model => model.Difficulty, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div style="padding-top: 10px;">
+                <div>
+                    <input type="submit" value="Utwórz" class="btn btn-default center-block" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="btn btn-reservationscreate btn-block center-block">
+    @Html.ActionLink("Wróc", "Index", "Home", null, new { @class = "link-start" })
+</div>

@@ -1,0 +1,52 @@
+﻿@model Orlik.Model.Domain.Reservation
+
+@{
+    ViewBag.Title = "Usuń rezerwację";
+}
+
+<div class="deletereservation-title">
+    <h1>Czy na pewno chcesz usunąć poniższą rezerwację?</h1>
+</div>
+
+<div class="deletereservation-wrapper">
+    <table class="table table-bordered" style="table-layout: fixed;">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Data")
+            </th>
+            <th>
+                @Html.DisplayName("Utworzono")
+            </th>
+            <th>
+                @Html.DisplayName("Ostatnia aktualizacja")
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.UpdatedAt)
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color" style="padding-top: 1px; pointer-events: all">
+            <input type="submit" value="Usuń" class="btn btn-default center-block" />
+        </div>
+    }
+</div>   
+<div class="btn btn-deletereservation btn-block center-block">
+        @Html.ActionLink("Wróć do listy", "User", "Reservations", null, new {@class = "link-deletereservation"})
+</div>

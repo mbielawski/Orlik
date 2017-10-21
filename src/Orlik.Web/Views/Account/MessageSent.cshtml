@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Wiadomośc wysłana";
+}
+
+<div class="passwordchanged-title">
+    <h1>Wiadomość z linkiem do zresetowania hasła została wysłana!<br/>Sprawdź swoją pocztę e-mail.</h1>
+</div>
+
+<div class="btn btn-passwordchanged btn-block center-block">
+    @Html.ActionLink("Wróć", "Index", "Home", null, new { @class = "link-start" })
+</div>

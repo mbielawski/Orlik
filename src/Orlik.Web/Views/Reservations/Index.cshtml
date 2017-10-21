@@ -1,0 +1,48 @@
+﻿@using Orlik.Web.Extensions;
+@model IEnumerable<Orlik.Web.ViewModels.Reservations.ReservationsIndexViewModel>
+
+@{
+    ViewBag.Title = "Lista rezerwacji";
+}
+
+<div class="reservationsindex-title">
+    <h1>Lista rezerwacji</h1>
+</div>
+
+<div class="reservationsindex-wrapper">
+    <table class="table table-bordered" style="table-layout: fixed;">
+        <thead>
+            <tr style="pointer-events: none">
+                <th>
+                    @Html.DisplayName("Data")
+                </th>
+                <th>
+                    @Html.DisplayName("Właściciel")
+                </th>
+                <th>
+                    @Html.DisplayName("Poziom")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                var name = item.Difficulty.GetDisplayName();
+                <tr class="btn-reservationsindex">
+                    <td>
+                        @Html.ActionLink(item.Date.ToString("MM / dd / yyyy HH:mm:ss"), "Details", new {id = item.ReservationId}, new { @class = "reservationsindex-link" })
+                    </td>
+                    <td>
+                        @Html.ActionLink(item.Owner.Username, "Details", new { id = item.ReservationId }, new { @class = "reservationsindex-link" })
+                    </td>
+                    <td>
+                        @Html.ActionLink(name, "Details", new { id = item.ReservationId }, new { @class = "reservationsindex-link" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="btn btn-reservationsindex btn-block center-block">
+    @Html.ActionLink("Dodaj nową rezerwację", "Create", "Reservations", null, new {@class = "link-deletereservation"})
+</div>

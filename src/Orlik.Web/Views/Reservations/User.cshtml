@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Orlik.Model.Domain.Reservation>
+
+@{
+    ViewBag.Title = "Moje rezerwacje";
+}
+
+<div class="reservationsuser-title">
+    <h1>Lista Twoich rezerwacji</h1>
+</div>
+
+<div class="reservationsindex-wrapper">
+    <table class="table table-bordered">
+        <thead>
+        <tr style="pointer-events: none">
+            <th>
+                @Html.DisplayName("Data")
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="btn-reservationsuser">
+                    @Html.ActionLink(item.Date.ToString("MM / dd / yyyy HH:mm:ss"), "Details", new {id = item.ReservationId}, new { @class = "reservationsuser-link" })
+                </td>
+                <td class="btn-reservationsuser">
+                    @Html.ActionLink("Edytuj", "Edit", new {id = item.ReservationId}, new { @class = "reservationsuser-link" })
+                </td>
+                <td class="btn-reservationsuser">
+                    @Html.ActionLink("Usuń", "Delete", new {id = item.ReservationId}, new { @class = "reservationsuser-link" })
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

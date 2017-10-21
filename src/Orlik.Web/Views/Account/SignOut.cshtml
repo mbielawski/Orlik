@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Wylogowywanie";
+}
+
+<div class ="signout-title">
+    <h1>Czy aby na pewno chcesz się wylogować?</h1>
+</div>
+
+<div class="btn btn-signout btn-block center-block">
+    @Html.ActionLink("Nie", "Index", "Home", null, new { @class = "link-signout" })
+</div>
+
+<div class="btn btn-signout btn-block center-block">
+    @Html.ActionLink("Tak", "SignOutConfirmed", "Account", null, new { @class = "link-signout" })
+</div>
+

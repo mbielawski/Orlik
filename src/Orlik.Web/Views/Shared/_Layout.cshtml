@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>@ViewBag.Title - Aplikacja Orlik</title>
+    
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Aplikacja Orlik</a>
+            </div>
+            @if (Request.Cookies["User"] != null)
+            {
+                <div class="nav navbar-nav navbar-right navbar-brand">
+                    Witaj, @Server.HtmlEncode(Request.Cookies["User"]["Username"]) !
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <footer class="modal-footer my-footer navbar-fixed-bottom">
+            Mateusz Bielawski &copy @DateTime.UtcNow.Year All Rights Reserved.
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
